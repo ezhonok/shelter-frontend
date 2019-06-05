@@ -4,6 +4,7 @@ import BadPeople from '../BadPeopleList'
 import GoodPeople from '../GoodPeopleList'
 import GoodSituations from '../GoodSituationsList'
 import BadSituations from '../BadSituationsList'
+import { Link } from 'react-router-dom'
 
 class Reflections extends Component {
 	constructor(){
@@ -49,6 +50,7 @@ componentDidMount(){
 	render(){
 		return(
 			<div>
+				<Link to="/techniques">See or add to your "Feel better" techniques</Link>
 				<Logs log={this.state.logs} />
 				<BadPeople log={this.state.logs}/>
 				<GoodPeople log={this.state.logs}/>

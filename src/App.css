@@ -70,4 +70,8 @@ a{
       list-style: none;
 }
 
-
+textarea {
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
+}
