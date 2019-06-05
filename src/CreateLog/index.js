@@ -52,12 +52,12 @@ class CreateLog extends Component {
 					name="hoursSleep" 
 					onChange={this.updateLog}/><br/><br/>
 				3. How well rested were you when you woke up (1 being least rested, 10 most)
-					<br/><br/>
+					<br/>
 					<input 
 					type="text" 
 					name="restedScale" 
 					onChange={this.updateLog}/><br/><br/>
-				4. Did you eat well today?(well meaning you didn’t go hungry for extended periods of time and ate healthy food; bad meaning you either didn’t eat much or ate mostly processed/junk food)					<br/>
+				4. Did you eat well today?(well meaning you didn’t go hungry for extended periods of time and ate healthy food; bad meaning you either didn’t eat much or ate mostly processed/junk food)<br/>
 					<input 
 					type="text" 
 					name="food" 
@@ -67,22 +67,22 @@ class CreateLog extends Component {
 					type="text" 
 					name="thought" 
 					onChange={this.updateLog}/><br/><br/>
-				6. Did you have any alcohol? If yes - how many drinks did you have?
+				6. Did you have any alcohol? If yes - how many drinks did you have?<br/>
 					<input 
 					type="text" 
 					name="alcohol" 
 					onChange={this.updateLog}/><br/><br/>
-				7. Did any situation make you upset? Explain
+				7. Did any situation make you upset? Explain<br/>
 					<input 
 					type="text" 
 					name="badSituation" 
 					onChange={this.updateLog}/><br/><br/>
-				8. Did anyone make you upset? Only provide name here
+				8. Did anyone make you upset? Only provide name here<br/>
 					<input 
 					type="text" 
 					name="badPerson" 
 					onChange={this.updateLog}/><br/><br/>
-				9. If someone made you upset - describe the circumstances
+				9. If someone made you upset - describe the circumstances<br/>
 					<input 
 					type="text" 
 					name="badPersonDescribed" 
@@ -92,32 +92,32 @@ class CreateLog extends Component {
 					type="text" 
 					name="selfCriticism" 
 					onChange={this.updateLog}/><br/><br/>
-				11. If you had a rough day - what did you do about it? Did you try to make yourself feel better? How?
+				11. If you had a rough day - what did you do about it? Did you try to make yourself feel better? How?<br/>
 					<input 
 					type="text" 
 					name="triedTechniques" 
 					onChange={this.updateLog}/><br/><br/>
-				12. If you talked to someone about how you feel provide their name here. If you didn’t talk to anyone leave blank
+				12. If you talked to someone about how you feel provide their name here. If you didn’t talk to anyone leave blank<br/>
 					<input 
 					type="text" 
 					name="talkedTo" 
 					onChange={this.updateLog}/><br/><br/>
-				13. Did anyone make you feel good? Only provide name here
+				13. Did anyone make you feel good? Only provide name here<br/>
 					<input 
 					type="text" 
 					name="goodPerson" 
 					onChange={this.updateLog}/><br/><br/>
-				14. If someone made you feel good - describe what happened
+				14. If someone made you feel good - describe what happened<br/>
 					<input 
 					type="text" 
 					name="goodPersonDescription" 
 					onChange={this.updateLog}/><br/><br/>
-				15. Was there an activity/event today that made you feel good? What was it?
+				15. Was there an activity/event today that made you feel good? What was it?<br/>
 					<input 
 					type="text" 
 					name="goodActivity" 
 					onChange={this.updateLog}/><br/><br/>
-				16. You can reflect further here
+				16. You can reflect further here<br/>
 					<input 
 					type="text" 
 					name="reflection" 
@@ -128,7 +128,7 @@ class CreateLog extends Component {
 				
 				
 
-				<br/><button>Submnit</button>
+				<br/><button>Submit</button>
 			</form>
 
 			)

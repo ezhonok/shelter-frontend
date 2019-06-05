@@ -1,16 +1,18 @@
 
 
 body{
-  background-image: url('http://www.af-usa.org/seeimg/big/102/1022903_calm-wallpaper-background.jpg')
-
+  /*background-image: url('http://atgbcentral.com/data/out/52/4361427-sunshine-wallpaper.jpg');*/
+  /*background-size: cover;*/
+  background-repeat: no-repeat;
+  /*background-position: center center;;*/
 }
 
 p {
 }
 
 div {
-  margin: auto;
-  width: 50%;
+/*  margin: auto;
+  width: 50%;*/
   padding: 10px;
 }
 
@@ -29,5 +31,43 @@ button {
   padding: 7px;
   box-shadow: 2px 2px 2px lightblue;
   background-color: pink;
-  border: 3px solid lightyellow;
+  /*border: 3px solid lightyellow;*/
 }
+
+li {
+    background: rgba(0, 160, 19, 0.3);
+    padding: 15px; 
+    margin: 15px;
+    border-radius: 10px;
+    border: solid 3px thistle;
+    box-shadow: 4px 4px black;
+    width: 80%;
+    height: 80%;
+    list-style: none;
+}
+
+
+
+ul {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  text-shadow: none;
+  font-weight: bold;
+}
+
+.BadPeople {
+      background: rgba(0, 160, 19, 0.3);
+      padding: 1em; 
+      margin: 20px;
+      border-radius: 10px;
+      border: solid 3px thistle;
+      box-shadow: 4px 4px black;
+      width: 80%;
+      height: 80%;
+      list-style: none;
+}
+
+

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-// import { Link } from 'react-router-dom'
+
+import { Link } from 'react-router-dom'
 
 
 
@@ -9,7 +10,8 @@ class Login extends Component {
 
 		this.state = {
 			username: '',
-			password: ''
+			password: '',
+			loggedIn: false
 		}
 	}
 
@@ -32,7 +34,10 @@ handleSubmit = async (e) => {
 		const parsedResponse = await loginResponse.json()
 
 		if(parsedResponse.data === 'login successful'){
-			// this.props.history.push('/home')
+			this.setState({
+				loggedIn: true
+			})
+			this.props.history.push('/logs')
 		}
 	}catch (err){
 
@@ -42,19 +47,22 @@ handleSubmit = async (e) => {
 
 	render(){
 		return(
-		<form onSubmit={this.handleSubmit}>
-			Username:
-			<br/><input
-				type='text'
-				name='username'
-				onChange={this.handleChange}/><br/><br/>
-			Password:
-			<br/><input
-				type='password'
-				name='password'
-				onChange={this.handleChange}/>
-				<br/><br/><button>Sign in</button><br/>
-		</form>
+			<div>
+				<form onSubmit={this.handleSubmit}>
+					Username:
+					<br/><input
+						type='text'
+						name='username'
+						onChange={this.handleChange}/><br/><br/>
+					Password:
+					<br/><input
+						type='password'
+						name='password'
+						onChange={this.handleChange}/>
+						<br/><br/><button>Sign in</button><br/>
+        				<p>or</p><Link to="/register">Register Here</Link>
+				</form>
+			</div>
 		)
 	}
 }
