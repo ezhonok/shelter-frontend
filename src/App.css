@@ -1,10 +1,10 @@
 
 
 body{
-  /*background-image: url('http://atgbcentral.com/data/out/52/4361427-sunshine-wallpaper.jpg');*/
-  /*background-size: cover;*/
-  background-repeat: no-repeat;
-  /*background-position: center center;;*/
+  background-image: url('https://edecorati.com/data/out/44/lotus-wallpapers_291471540.jpg');
+  background-size: cover;
+  /*background-repeat: no-repeat;*/
+  /*background-position: center center;*/
 }
 
 p {
@@ -20,18 +20,19 @@ input {
   border-radius: 5px;
   font-size: 20px;
   width: 250px;
-  background-color: lightblue;
+  background-color: rgba(173, 216, 230, 0.4);
 
 }
 
 
 button {
   font-size: 20px;
+  color: yellow;
   border-radius: 10px;
   padding: 7px;
-  box-shadow: 2px 2px 2px lightblue;
-  background-color: pink;
-  /*border: 3px solid lightyellow;*/
+  box-shadow: 2px 2px 2px lightyellow;
+  background: rgba(255, 192, 203, 0.4);
+  border: 0.5px solid yellow;
 }
 
 li {
@@ -40,7 +41,7 @@ li {
     margin: 15px;
     border-radius: 10px;
     border: solid 3px thistle;
-    box-shadow: 4px 4px black;
+    box-shadow: 4px 10px 10px black;
     width: 80%;
     height: 80%;
     list-style: none;
@@ -64,7 +65,7 @@ a{
       margin: 20px;
       border-radius: 10px;
       border: solid 3px thistle;
-      box-shadow: 4px 4px black;
+      box-shadow: 4px 10px 10px black;
       width: 80%;
       height: 80%;
       list-style: none;
@@ -74,4 +75,7 @@ textarea {
   width: 250px;
   height: 200px;
   border-radius: 10px;
+  box-shadow: 4px 10px 10px black;
+  background: rgba(0, 160, 19, 0.3);
+  border: none;
 }

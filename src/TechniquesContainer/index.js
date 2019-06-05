@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import Logs from '../LogList'
 import CreateTechnique from '../CreateTechnique'
 import Techniques from '../TechniquesList'
+// import HomeTechniques from '../HomeTechniquesList'
 
 // import { Link } from 'react-router-dom'
 
@@ -85,6 +85,7 @@ class TechniquesContainer extends Component {
 			<div>
 				<CreateTechnique addTechnique={this.addTechnique}/>
 				<Techniques technique={this.state.techniques} />
+
 			</div>
 			)
 	}
