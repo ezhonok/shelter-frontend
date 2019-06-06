@@ -37,7 +37,7 @@ handleSubmit = async (e) => {
 			this.setState({
 				loggedIn: true
 			})
-			this.props.history.push('/logs')
+			this.props.history.push('/home')
 		}
 	}catch (err){
 

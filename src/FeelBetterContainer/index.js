@@ -11,7 +11,6 @@ class FeelBetterContainer extends Component {
 
 		this.state = {
 			logs: [],
-			// peopleToTalk: [],
 			outsideTechniques: [],
 			homeTechniques: [],
 			// allUsersTechniques: [],
