@@ -48,14 +48,17 @@ handleSubmit = async (e) => {
 	render(){
 		return(
 			<div>
+			<div className="Willow">Willow</div>
 				<form onSubmit={this.handleSubmit}>
 					Username:
 					<br/><input
+						className="Login"
 						type='text'
 						name='username'
 						onChange={this.handleChange}/><br/><br/>
 					Password:
 					<br/><input
+						className="Login"
 						type='password'
 						name='password'
 						onChange={this.handleChange}/>

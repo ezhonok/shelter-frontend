@@ -24,7 +24,7 @@ class CreateTechnique extends Component {
 		console.log(this.state);
 		return (
 			<form onSubmit={this.props.addTechnique.bind(null, this.state)} >
-				1. Where can you do this? Only put 'home', 'outside' or 'anywhere'
+				1. Where can you do this? <br/> Only put 'home', 'outside' or 'anywhere'
 					<br/>
 					<input 
 					type="text" 
@@ -35,7 +35,7 @@ class CreateTechnique extends Component {
 					<textarea 
 					type="text" 
 					name="description" 
-					onChange={this.updateTechnique}/><br/><br/>
+					onChange={this.updateTechnique}/><br/>
 				
 
 				<br/><button>Add</button>

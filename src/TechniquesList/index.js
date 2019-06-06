@@ -6,9 +6,13 @@ const Techniques = (props) => {
 	const TechniqueList = props.technique.map((techniques) => {
 		console.log("one technique: ", techniques)
 		return (
-			<li key={techniques._id}>
+			<li className="ListOfTechniques" key={techniques._id}>
 				<p>Most convenient environment for this technique:</p>{techniques.environment}<br/><br/>
 				<p>The technique:</p>{techniques.description}<br/><br/>
+				<button
+				onClick={props.showModal.bind(null, techniques)}>
+				Edit
+				</button>
 			</li>
 			)
 	})

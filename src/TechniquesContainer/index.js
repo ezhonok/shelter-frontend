@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import CreateTechnique from '../CreateTechnique'
 import Techniques from '../TechniquesList'
+import EditTechnique from '../EditTechnique'
 // import HomeTechniques from '../HomeTechniquesList'
 
 // import { Link } from 'react-router-dom'
@@ -12,7 +13,13 @@ class TechniquesContainer extends Component {
 
 		this.state = {
 			techniques: [],
-			isLogged: this.props
+			isLogged: this.props,
+			techniqueToEdit: {
+				_id: null,
+				description: '',
+				environment: ''
+			},
+			modalShowing: false
 		}
 	}
 
@@ -79,12 +86,64 @@ class TechniquesContainer extends Component {
 	
 	}
 
+
+	edit = async (e) => {
+		e.preventDefault()
+try {
+	const editResponse = await fetch(process.env.REACT_APP_BACKEND_URL + '/technique/' + this.state.techniqueToEdit._id, {
+		method: 'PUT',
+		body: JSON.stringify(this.state.techniqueToEdit),
+		headers: {
+			'Content-Type': 'application/json'
+		}
+	})
+	const parsedResponse = await editResponse.json()
+	const editedTechniques = this.state.techniques.map((technique) => {
+		if(technique._id === this.state.techniqueToEdit._id){
+			technique = parsedResponse.data
+		}
+		return technique
+	})
+	this.setState({
+		techniques: editedTechniques,
+		modalShowing: false
+	})
+} catch(err) {
+	console.log(err);
+}
+
+	}
+
+
+	handleFormChange = (e) => {
+		this.setState({
+			techniqueToEdit: {
+				...this.state.techniqueToEdit,
+				[e.target.name]: e.target.value
+			}
+		})
+	}
+
+	showModal = (technique) => {
+		this.setState({
+			modalShowing: true,
+			techniqueToEdit: technique
+		})
+	}
+
+
 	render(){
 		console.log(this.props.loggedIn);
 		return(
 			<div>
-				<CreateTechnique addTechnique={this.addTechnique}/>
-				<Techniques technique={this.state.techniques} />
+				<CreateTechnique
+				addTechnique={this.addTechnique}/>
+				<Techniques
+				technique={this.state.techniques}
+				showModal={this.showModal}
+				 />
+				 {this.state.modalShowing ?<EditTechnique techniqueToEdit={this.state.techniqueToEdit} edit={this.edit} handleFormChange={this.handleFormChange}/>: null}
+				
 
 			</div>
 			)
