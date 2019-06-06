@@ -6,7 +6,7 @@ const GoodPeople = (props) => {
 	const GoodPeopleList = props.log.map((logs) => {
 		console.log("one log: ", logs)
 		return (
-
+			
 			<li key={logs._id}>
 
 				{logs.goodPerson}
@@ -17,7 +17,9 @@ const GoodPeople = (props) => {
 
 	return (
 		<div className="BadPeople">
-			
+			<div>
+				Good people
+			</div>
 			{GoodPeopleList}
 			</div>
 

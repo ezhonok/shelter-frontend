@@ -131,6 +131,17 @@ try {
 		})
 	}
 
+	deleteTechnique = async (id, e) => {
+		e.preventDefault()
+		try {
+			const deleteTechnique = await fetch(process.env.REACT_APP_BACKEND_URL + '/technique/' + id, {
+				method: 'DELETE'
+			})
+			this.setState({techniques: this.state.techniques.filter((technique, i) => technique._id !== id)})
+		} catch(err) {
+			console.log(err);
+		}
+	}
 
 	render(){
 		console.log(this.props.loggedIn);
@@ -140,6 +151,7 @@ try {
 				addTechnique={this.addTechnique}/>
 				<Techniques
 				technique={this.state.techniques}
+				deleteTechnique={this.deleteTechnique}
 				showModal={this.showModal}
 				 />
 				 {this.state.modalShowing ?<EditTechnique techniqueToEdit={this.state.techniqueToEdit} edit={this.edit} handleFormChange={this.handleFormChange}/>: null}

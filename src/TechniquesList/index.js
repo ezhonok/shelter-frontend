@@ -13,6 +13,10 @@ const Techniques = (props) => {
 				onClick={props.showModal.bind(null, techniques)}>
 				Edit
 				</button>
+				<button
+				onClick={props.deleteTechnique.bind(null, techniques._id)}>
+				Delete
+				</button>
 			</li>
 			)
 	})
