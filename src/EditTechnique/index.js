@@ -4,22 +4,23 @@ import React from 'react'
 const EditTechnique = (props) => {
 	return (
 		<div className='edit'>
-			<strong> Edit Your Technique </strong><br/>
+			<strong> Edit Your Technique </strong><br/><br/>
 			<form onSubmit={props.edit}>
 				Edit where you can use this technique (home, outside or anywhere)
 				<br/><input
 				type="text"
 				name="environment"
 				onChange={props.handleFormChange}
-				value={props.techniqueToEdit.environment}/>
+				value={props.techniqueToEdit.environment}/><br/><br/>
 				Edit description:
 				<br/><input
 				type="text"
 				name="description"
 				onChange={props.handleFormChange}
 				value={props.techniqueToEdit.description}/>
-				<br/><br/>
+				<br/><br/><br/>
 				<button>Submit</button>
+				<button className="exitButton" >x</button>
 				</form>
 		</div>
 

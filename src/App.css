@@ -134,5 +134,22 @@ input:focus{
 }
 
 
+.edit {
+    background: rgba(0, 200, 200, 0.8);
+    padding: 15px; 
+    margin: 15px;
+    border-radius: 10px;
+    border: solid 1px yellow;
+    width: 80%;
+    height: 40%;
+    top: 42%;
+    /*left: 20%;*/
+    position: fixed;
+}
 
-
+.exitButton {
+  position: absolute;
+  top: 5px;
+  bottom: 10;
+  right: 5px;
+}
