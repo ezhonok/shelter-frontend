@@ -6,6 +6,7 @@ import Login from './Login'
 import LogContainer from './LogContainer'
 import ReflectionContainer from './ReflectionContainer'
 import TechniquesContainer from './TechniquesContainer'
+import FeelBetterContainer from './FeelBetterContainer'
 
 const My404 = () => {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route exact path="/logs" component={ LogContainer } />
         <Route exact path="/reflections" component={ ReflectionContainer } />
         <Route exact path="/techniques" component={ TechniquesContainer } />
+        <Route exact path="/feel-better" component={ FeelBetterContainer } />
         <Route component={My404} />
       </Switch>
     </BrowserRouter>

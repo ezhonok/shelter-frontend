@@ -4,12 +4,12 @@ const HomeTechniques = (props) => {
 	console.log("props for HomeTechniquesList: ", props)
 
 	const HomeTechniquesList = props.homeTechniques.map((techniques) => {
-		console.log("one technique: ", homeTechniques)
+		console.log("one technique: ", techniques)
 		return (
 
-			<li key={homeTechniques._id}>
+			<li key={techniques._id}>
 
-				{homeTechniques.description}
+				{techniques}
 		
 			</li>
 			)
