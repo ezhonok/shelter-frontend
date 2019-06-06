@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import CreateTechnique from '../CreateTechnique'
 import Techniques from '../TechniquesList'
 import EditTechnique from '../EditTechnique'
+import AllUsersTechniques from '../AllUsersTechniquesList'
+
 // import HomeTechniques from '../HomeTechniquesList'
 
 // import { Link } from 'react-router-dom'
@@ -13,6 +15,7 @@ class TechniquesContainer extends Component {
 
 		this.state = {
 			techniques: [],
+			allTechniques: [],
 			isLogged: this.props,
 			techniqueToEdit: {
 				_id: null,
@@ -26,6 +29,7 @@ class TechniquesContainer extends Component {
 
 	componentDidMount(){
 		this.getTechniques()
+		this.getAllUsersTechniques()
 	}
 
 
@@ -51,6 +55,35 @@ class TechniquesContainer extends Component {
 		}
 
 	}
+
+
+getAllUsersTechniques = async () => {
+
+		try {
+			const response = await fetch(process.env.REACT_APP_BACKEND_URL + '/technique/all-techniques', {
+				method: 'GET',
+				'credentials': 'include',
+				headers: {
+					'Content-Type': 'application/json'
+				}
+			})
+
+			if (response.status !== 200){
+				throw Error(response.statusText)
+			}
+			const allTechniquesParsed = await response.json()
+
+			this.setState({allTechniques: allTechniquesParsed.data})
+			// console.log(allTechniques, "this is allTechniques");
+		}catch (err){
+			console.log(err);
+		}
+
+	}
+
+
+
+
 
 
 	addTechnique = async (technique, e) => {
@@ -153,8 +186,11 @@ try {
 				technique={this.state.techniques}
 				deleteTechnique={this.deleteTechnique}
 				showModal={this.showModal}
-				 />
-				 {this.state.modalShowing ?<EditTechnique techniqueToEdit={this.state.techniqueToEdit} edit={this.edit} handleFormChange={this.handleFormChange}/>: null}
+				/>
+				<AllUsersTechniques
+				allTechniques={this.state.allTechniques}
+				/>
+				{this.state.modalShowing ?<EditTechnique techniqueToEdit={this.state.techniqueToEdit} edit={this.edit} handleFormChange={this.handleFormChange}/>: null}
 				
 
 			</div>

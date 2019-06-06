@@ -34,7 +34,7 @@ handleSubmit = async (e) => {
 		const parsedResponse = await regResponse.json()
 
 		if (parsedResponse.data === 'registration successful'){
-			// this.props.history.push('/home')
+			this.props.history.push('/logs')
 		}
 
 
