@@ -51,7 +51,7 @@ class CreateLog extends Component {
 					type="text" 
 					name="hoursSleep" 
 					onChange={this.updateLog}/><br/><br/>
-				3. How well rested were you when you woke up (1 being least rested, 10 most)
+				3. How well-rested were you when you woke up (1 being least rested, 10 most)
 					<br/>
 					<input 
 					type="text" 
@@ -62,7 +62,7 @@ class CreateLog extends Component {
 					type="text" 
 					name="food" 
 					onChange={this.updateLog}/><br/><br/>
-				5. Was there a thought you kept coming back to throughout the day? What was it?<br/>
+				5. Was there a thought you kept coming back to throughout the day? If yes - what was it?<br/>
 					<input 
 					type="text" 
 					name="thought" 
@@ -72,12 +72,12 @@ class CreateLog extends Component {
 					type="text" 
 					name="alcohol" 
 					onChange={this.updateLog}/><br/><br/>
-				7. Did any situation make you upset? Explain<br/>
+				7. If there was a situation that upset you - provide details here<br/>
 					<input 
 					type="text" 
 					name="badSituation" 
 					onChange={this.updateLog}/><br/><br/>
-				8. Did anyone make you upset? Only provide name here<br/>
+				8. If someone made you upset provide their name here<br/>
 					<input 
 					type="text" 
 					name="badPerson" 
@@ -87,7 +87,7 @@ class CreateLog extends Component {
 					type="text" 
 					name="badPersonDescribed" 
 					onChange={this.updateLog}/><br/><br/>
-				10. Did you have any negative thoughts about yourself? What made you think that?<br/>
+				10. Did you have any negative thoughts about yourself? If you did - what triggered those thoughts?<br/>
 					<input 
 					type="text" 
 					name="selfCriticism" 
@@ -97,12 +97,12 @@ class CreateLog extends Component {
 					type="text" 
 					name="triedTechniques" 
 					onChange={this.updateLog}/><br/><br/>
-				12. If you talked to someone about how you feel provide their name here. If you didn’t talk to anyone leave blank<br/>
+				12. If you talked to someone about how you feel - provide their name here. If you didn’t talk to anyone leave blank<br/>
 					<input 
 					type="text" 
 					name="talkedTo" 
 					onChange={this.updateLog}/><br/><br/>
-				13. Did anyone make you feel good? Only provide name here<br/>
+				13. If someone made you feel good today - provide their name here<br/>
 					<input 
 					type="text" 
 					name="goodPerson" 

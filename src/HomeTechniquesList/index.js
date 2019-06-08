@@ -16,9 +16,11 @@ const HomeTechniques = (props) => {
 	})
 
 	return (
-		<div className="HomeTechniques">
-			<p>These are your home techniques </p>
-			{HomeTechniquesList}
+		<div className="HomeTechniques1">
+			<p>If you are at home, try something from this list </p>
+			<div className="HomeTechniques">
+				{HomeTechniquesList}
+			</div>
 			</div>
 
 		)

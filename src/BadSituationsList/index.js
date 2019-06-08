@@ -16,11 +16,13 @@ const BadSituations = (props) => {
 	})
 
 	return (
-		<div className="BadSituations">
+		<div className="BadSituations1">
 			<div>
-				Bad Situations
+				Situations below did not make you feel great. Why? What was your primary feeling? Come back to this reflection in a few days and see if you still feel the same way and think about why yu do or don't feel the same way.
 			</div>
-			{BadSituationsList}
+				<div className="BadSituations">
+					{BadSituationsList}
+				</div>
 			</div>
 
 		)

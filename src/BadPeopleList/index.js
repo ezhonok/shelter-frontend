@@ -16,12 +16,14 @@ const BadPeople = (props) => {
 	})
 
 	return (
-		<div className="BadPeople">
+		<div className="BadPeople1">
 			<div>
-				Bad people
+				People below upset you at some point. It happens! But do take a closer look and see if someone is here an awful lot. Reflect on your relationship and decide what to do about it.
 			</div>
+			<div className="BadPeople">
 			{BadPeopleList}
 			</div>
+		</div>
 
 		)
 }

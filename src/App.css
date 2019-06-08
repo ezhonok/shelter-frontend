@@ -6,8 +6,8 @@
 
 
 body{
-/*  background-image: url('https://edecorati.com/data/out/44/lotus-wallpapers_291471540.jpg');
-  background-size: cover;*/
+  background-image: url('https://edecorati.com/data/out/44/lotus-wallpapers_291471540.jpg');
+  background-size: cover;
   /*background-repeat: no-repeat;*/
   /*background-position: center center;*/
 }
@@ -18,7 +18,7 @@ body{
   font-family: 'Dancing Script', cursive;
   font-size: 88px;
   position: relative left;
-  /*text-shadow: 5px 5px 10px blue;*/
+  text-shadow: 5px 5px 10px cadetblue;
 }
 
 p {
@@ -52,13 +52,15 @@ input {
 
 button {
   font-size: 20px;
-  /*color: yellow;*/
+  color: yellow;
   border-radius: 10px;
-/*  padding: 7px;
-  box-shadow: 2px 2px 2px lightyellow;
+  padding: 7px;
+  box-shadow: 3px 3px 3px lightyellow;
   background: rgba(255, 192, 203, 0.4);
   border: 1px outset yellow;
-  font-family: 'Great Vibes', cursive;*/
+  font-family: 'Great Vibes', cursive;
+  margin: 5px;
+  text-shadow: 3px 3px 3px pink;
 }
 
 li {
@@ -67,7 +69,7 @@ li {
     margin: 15px;
     border-radius: 10px;
     border: solid 1px thistle;
-    /*box-shadow: 5px 5px 10px hotpink;*/
+    box-shadow: 5px 5px 10px hotpink;
     width: 80%;
     height: 80%;
     list-style: none;
@@ -81,8 +83,11 @@ ul {
 
 a{
   text-decoration: none;
-  text-shadow: none;
+  text-shadow: 4px 5px 5px black;
   font-weight: bold;
+  color: antiquewhite;
+  font-size: 20px;
+
 }
 
 .BadPeople {
@@ -103,19 +108,19 @@ textarea {
   width: 450px;
   height: 200px;
   border-radius: 10px;
-/*  box-shadow: 4px 10px 10px black;
+  box-shadow: 4px 10px 10px black;
   background: rgba(0, 160, 19, 0.3);
   border: none;
   font-family: 'Seaweed Script', cursive;
-  font-size: 37px;*/
+  font-size: 37px;
   padding: 15px;
 }
 
 
-/*button:hover{
+button:hover{
   outline: none;
   background: rgba(255, 152, 203, 0.4)
-}*/
+}
 
 textarea:focus{
   outline: none;
@@ -153,3 +158,262 @@ input:focus{
   bottom: 10;
   right: 5px;
 }
+
+
+/*.logContainer {
+  width: 80%;
+  height: 50%;
+  border: 2px 2px solid black;
+  background-color: black;
+  display: flex;
+  flex-direction: row; 
+  /*justify-content: center;*/
+/*  flex-wrap: wrap;
+
+
+}*/
+
+/*This is the main container for logs*/
+.ListOfLogs1 {
+    background: rgba(0, 160, 19, 0.3);
+    padding: 15px; 
+    margin: 15px;
+    border-radius: 10px;
+    border: solid 1px thistle;
+    box-shadow: 5px 5px 10px hotpink;
+    /*width: 300px;*/
+    height: 1000px;
+    /*list-style: none;*/
+    /*flex-wrap: wrap;*/
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    overflow: auto;
+
+}
+
+/*these are the individual logs*/
+.listOfLogs {
+
+    background: rgba(0, 160, 19, 0.3);
+    padding: 15px; 
+    margin: 15px;
+    border-radius: 10px;
+    border: solid 1px thistle;
+    /*box-shadow: 5px 5px 10px hotpink;*/
+    width: 400px;
+    /*height: 00px;*/
+    list-style: none;
+    /*display: flex;*/
+    /*flex-direction: row;*/
+
+}
+
+
+
+.ListOfLogs:empty:after{
+  content: 'It looks empty now but the more logs you create the more results you will see! Keep at it :)'
+}
+
+/*.AllUsersTechniques {
+  background: rgba(0, 160, 19, 0.3);
+    padding: 1em; 
+    margin: 20px;
+    border-radius: 10px;
+    border: solid 3px thistle;
+    box-shadow: 4px 10px 10px black;
+    width: 80%;
+    height: 80%;
+    list-style: none;
+}*/
+
+.AllUsersTechniques1 {
+  background: rgba(0, 160, 19, 0.3);
+    padding: 1em; 
+    margin: 20px;
+    border-radius: 10px;
+    border: solid 3px thistle;
+    box-shadow: 4px 10px 10px black;
+    width: 80%;
+    height: 80%;
+    list-style: none;
+}
+
+.HomeTechniques:empty:after {
+  content: 'You have not created any home techniques yet. You can create them by going to "My Techniques" page'
+}
+
+.HomeTechniques1 {
+    background: rgba(0, 160, 19, 0.3);
+    padding: 1em; 
+    margin: 20px;
+    border-radius: 10px;
+    border: solid 3px thistle;
+    box-shadow: 4px 10px 10px black;
+    width: 80%;
+    height: 80%;
+    list-style: none;
+}
+
+.HomeTechniques {
+    background: rgba(0, 160, 19, 0.3);
+    padding: 1em; 
+    margin: 20px;
+    border-radius: 10px;
+    border: solid 3px thistle;
+    box-shadow: 4px 10px 10px black;
+    width: 80%;
+    height: 80%;
+    list-style: none;
+}
+
+
+.OutsideTechniques:empty:after {
+  content: 'You have not created any outside techniques yet. You can create them by going to "My Techniques" page'
+
+}
+
+.OutsideTechniques1 {
+    background: rgba(0, 160, 19, 0.3);
+    padding: 1em; 
+    margin: 20px;
+    border-radius: 10px;
+    border: solid 3px thistle;
+    box-shadow: 4px 10px 10px black;
+    width: 80%;
+    height: 80%;
+    list-style: none;
+}
+
+.OutsideTechniques {
+    background: rgba(0, 160, 19, 0.3);
+    padding: 1em; 
+    margin: 20px;
+    border-radius: 10px;
+    border: solid 3px thistle;
+    box-shadow: 4px 10px 10px black;
+    width: 80%;
+    height: 80%;
+    list-style: none;
+}
+
+
+.BadSituations:empty:after {
+  content: 'Nothing bad has been recorded by you yet. Not such a bad thing :) However, be sure to complete your logs frequently and accurately to be able to analyze your bad days.'
+}
+
+.BadSituations1 {
+    background: rgba(0, 160, 19, 0.3);
+    padding: 1em; 
+    margin: 20px;
+    border-radius: 10px;
+    border: solid 3px thistle;
+    box-shadow: 4px 10px 10px black;
+    width: 80%;
+    height: 80%;
+    list-style: none;
+}
+
+.BadSituations {
+    background: rgba(0, 160, 19, 0.3);
+    padding: 1em; 
+    margin: 20px;
+    border-radius: 10px;
+    border: solid 3px thistle;
+    box-shadow: 4px 10px 10px black;
+    width: 80%;
+    height: 80%;
+    list-style: none;
+}
+
+
+.GoodPeople:empty:after{
+  content: 'Looks like no one has been added to this list yet. Once you get in a habit of creating your logs you will see more and more people here :)'
+}
+
+/*main container for good people list*/
+.GoodPeople1 {
+    background: rgba(0, 160, 19, 0.3);
+    padding: 1em; 
+    margin: 20px;
+    border-radius: 10px;
+    border: solid 3px thistle;
+    box-shadow: 4px 10px 10px black;
+    width: 80%;
+    height: 80%;
+    list-style: none;
+
+}
+
+/*each individual list item in good people*/
+.GoodPeople {
+    background: rgba(0, 160, 19, 0.3);
+    padding: 1em; 
+    margin: 20px;
+    border-radius: 10px;
+    border: solid 3px thistle;
+    box-shadow: 4px 10px 10px black;
+    width: 80%;
+    height: 80%;
+    list-style: none;
+
+}
+
+
+
+.GoodSituations:empty:after{
+  content: 'It is empty now but the more logs you create the more results you will see! Keep at it :)'
+}
+.GoodSituations1 {
+    background: rgba(0, 160, 19, 0.3);
+    padding: 1em; 
+    margin: 20px;
+    border-radius: 10px;
+    border: solid 3px thistle;
+    box-shadow: 4px 10px 10px black;
+    width: 80%;
+    height: 80%;
+    list-style: none;
+}
+
+.GoodSituations {
+    background: rgba(0, 160, 19, 0.3);
+    padding: 1em; 
+    margin: 20px;
+    border-radius: 10px;
+    border: solid 3px thistle;
+    box-shadow: 4px 10px 10px black;
+    width: 80%;
+    height: 80%;
+    list-style: none;
+}
+
+.BadPeople:empty:after{
+  content: 'No one is on this list yet but you will see some people here the more logs you create'
+}
+
+.BadPeople {
+    background: rgba(0, 160, 19, 0.3);
+    padding: 1em; 
+    margin: 20px;
+    border-radius: 10px;
+    border: solid 3px thistle;
+    box-shadow: 4px 10px 10px black;
+    width: 80%;
+    height: 80%;
+    list-style: none;
+}
+
+.BadPeople1 {
+    background: rgba(0, 160, 19, 0.3);
+    padding: 1em; 
+    margin: 20px;
+    border-radius: 10px;
+    border: solid 3px thistle;
+    box-shadow: 4px 10px 10px black;
+    width: 80%;
+    height: 80%;
+    list-style: none;
+}
+
+
+

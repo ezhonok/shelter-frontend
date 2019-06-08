@@ -165,6 +165,13 @@ try {
 		})
 	}
 
+
+	closeWindow = () => {
+		this.setState({
+			modalShowing: false
+		})
+	}
+
 	deleteTechnique = async (id, e) => {
 		e.preventDefault()
 		try {

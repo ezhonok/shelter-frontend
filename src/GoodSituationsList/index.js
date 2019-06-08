@@ -16,11 +16,13 @@ const GoodSituations = (props) => {
 	})
 
 	return (
-		<div className="GoodSituations">
+		<div className="GoodSituations1">
 			<div>
-				Good Situations
+				Situations below lifted your spirit. Consider adding them to your "Feel Better" techniques (if applicable)
 			</div>
-			{GoodSituationsList}
+				<div className="GoodSituations">
+					{GoodSituationsList}
+				</div>
 			</div>
 
 		)

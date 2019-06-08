@@ -16,11 +16,13 @@ const GoodPeople = (props) => {
 	})
 
 	return (
-		<div className="GoodPeople">
+		<div className="GoodPeople1">
 			<div>
-				Good people
+				People below made you feel good :) That is precious! Be grateful and share your gratitude with them.
 			</div>
+			<div className="GoodPeople">
 			{GoodPeopleList}
+			</div>
 			</div>
 
 		)
