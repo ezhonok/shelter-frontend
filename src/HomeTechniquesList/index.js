@@ -7,7 +7,7 @@ const HomeTechniques = (props) => {
 		console.log("one technique: ", techniques)
 		return (
 
-			<li key={techniques._id}>
+			<li className="liHomeTechniques" key={techniques._id}>
 
 				{techniques}
 		
@@ -18,9 +18,7 @@ const HomeTechniques = (props) => {
 	return (
 		<div className="HomeTechniques1">
 			<p>If you are at home, try something from this list </p>
-			<div className="HomeTechniques">
 				{HomeTechniquesList}
-			</div>
 			</div>
 
 		)

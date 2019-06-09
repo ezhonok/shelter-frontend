@@ -7,7 +7,7 @@ const GoodSituations = (props) => {
 		console.log("one log: ", logs)
 		return (
 
-			<li key={logs._id}>
+			<li className="liSituations" key={logs._id}>
 
 				{logs.goodActivity}
 		
@@ -20,9 +20,8 @@ const GoodSituations = (props) => {
 			<div>
 				Situations below lifted your spirit. Consider adding them to your "Feel Better" techniques (if applicable)
 			</div>
-				<div className="GoodSituations">
 					{GoodSituationsList}
-				</div>
+				
 			</div>
 
 		)

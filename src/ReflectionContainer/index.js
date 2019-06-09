@@ -51,11 +51,11 @@ componentDidMount(){
 		return(
 			<div>
 				<Link to="/techniques">See or add to your "Feel better" techniques</Link>
-				<Logs log={this.state.logs} />
 				<BadPeople log={this.state.logs}/>
 				<GoodPeople log={this.state.logs}/>
 				<GoodSituations log={this.state.logs}/>
 				<BadSituations log={this.state.logs}/>
+				<Logs log={this.state.logs} />
 			</div>
 		)
 	}

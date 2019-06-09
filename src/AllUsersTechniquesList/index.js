@@ -18,7 +18,7 @@ const AllUsersTechniques = (props) => {
 	return (
 		<div className="AllUsersTechniques1">
 			<div>
-				Below are techniques that other people use when they are having a rough day. Take a look! You might find something that works for you as well!
+				Below are techniques that other people use when they are having a rough day. Take a look! You might find something that works for you as well.
 			</div>
 
 				{AllUsersTechniquesList}

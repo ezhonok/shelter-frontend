@@ -7,7 +7,7 @@ const GoodPeople = (props) => {
 		console.log("one log: ", logs)
 		return (
 			
-			<li key={logs._id}>
+			<li className="liPeople" key={logs._id}>
 
 				{logs.goodPerson}
 		
@@ -20,9 +20,8 @@ const GoodPeople = (props) => {
 			<div>
 				People below made you feel good :) That is precious! Be grateful and share your gratitude with them.
 			</div>
-			<div className="GoodPeople">
 			{GoodPeopleList}
-			</div>
+			
 			</div>
 
 		)

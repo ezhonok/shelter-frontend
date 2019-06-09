@@ -7,7 +7,7 @@ const BadPeople = (props) => {
 		console.log("one log: ", logs)
 		return (
 
-			<li key={logs._id}>
+			<li className="liPeople" key={logs._id}>
 
 				{logs.badPerson}
 		
@@ -17,12 +17,11 @@ const BadPeople = (props) => {
 
 	return (
 		<div className="BadPeople1">
-			<div>
+			
 				People below upset you at some point. It happens! But do take a closer look and see if someone is here an awful lot. Reflect on your relationship and decide what to do about it.
-			</div>
-			<div className="BadPeople">
+			
 			{BadPeopleList}
-			</div>
+			
 		</div>
 
 		)

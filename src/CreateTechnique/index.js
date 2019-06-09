@@ -39,20 +39,21 @@ class CreateTechnique extends Component {
 			</div>
 				<div className="CreateTechnique1">
 					<strong> Ready to save your technique? Here we go :) </strong> <br/><br/>
-				1. Where can you do this? <br/> (Only put 'home', 'outside' or 'anywhere')
+				
+				 Describe your technique
+					<br/>
+					<textarea 
+					type="text" 
+					name="description" 
+					onChange={this.updateTechnique}/><br/>
+				<br/>Where can you do this? <br/> (Only put 'home', 'outside' or 'anywhere')
 					<br/>
 					<input 
 					className="techniqueInput"
 					type="text" 
 					name="environment" 
 					onChange={this.updateTechnique}/><br/><br/>
-				2. Describe the technique
-					<br/>
-					<textarea 
-					type="text" 
-					name="description" 
-					onChange={this.updateTechnique}/><br/>
-				
+					
 
 				<button className="addTechniqueButton">Add to your techniques</button>
 			</div>

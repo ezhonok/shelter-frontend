@@ -17,7 +17,7 @@ body{
 .Willow {
   margin: 0% 70%;
   font-family: 'Dancing Script', cursive;
-  font-size: 88px;
+  font-size: 111px;
   position: relative left;
   text-shadow: 5px 5px 10px cadetblue;
 }
@@ -107,7 +107,7 @@ ul {
 
 a{
   text-decoration: none;
-  text-shadow: 4px 5px 8px black;
+  text-shadow: 4px 2px 8px black;
   font-weight: bold;
   color: antiquewhite;
   font-size: 25px;
@@ -211,6 +211,29 @@ input:focus{
 
 }
 
+ .liLogs {
+    background: rgba(0, 160, 19, 0.3);
+    /*padding: 1em; */
+    /*margin: 20px;*/
+    border-radius: 10px;
+    border: solid 1px thistle;
+    box-shadow: 4px 10px 10px black;
+    width: 450px;
+    height: 700px;
+    list-style: none;
+    line-height: 18px;
+   /* position: absolute;
+    bottom: -1000px;
+    right: 0;
+    top: 20%;*/
+    float: left;
+    margin-left: 0px;
+    /*margin-top: 1500px;*/
+    /*margin-top: -1251px;*/
+    /*right: 0;*/
+    /*left: 0px;*/
+    overflow: auto;
+}
 
 
 .ListOfLogs:empty:after{
@@ -229,6 +252,8 @@ input:focus{
     list-style: none;
 }*/
 
+
+
 /*the main container*/
 .CreateTechnique {
   /*border: solid 1px red;*/
@@ -237,6 +262,8 @@ input:focus{
   margin-top: 20px;
   display: flex;
   flex-direction: row;
+  font-size: 18px;
+  font-weight: normal;
 
 }
 
@@ -246,7 +273,7 @@ input:focus{
   background-color: indianred;
   border-radius: 10px;
   height: 100%;
-  width: 100%;
+  width: 90%;
   /*margin-top: 20px;*/
 
 }
@@ -254,10 +281,13 @@ input:focus{
 /*the form container*/
 .CreateTechnique1 {
   /*border: solid 1px yellow;*/
-  height: 265px;
+  height: 335px;
   width: 100%;
   margin-left: 20px;
-  /*margin-top: 20px;*/
+  color: black;
+  text-shadow: none;
+  font-size: 17px;
+  margin-top: -10px;
 
 }
 
@@ -275,7 +305,7 @@ input:focus{
 }
 
 textarea {
-  width: 300px;
+  width: 360px;
   height: 100%;
   border-radius: 10px;
   /*box-shadow: 4px 10px 10px black;*/
@@ -303,15 +333,16 @@ textarea:focus{
     border: solid 1px thistle;
     box-shadow: 4px 10px 10px black;
     width: 300px;
-    height: 440px;
+    height: 510px;
     list-style: none;
-   /* position: absolute;
-    bottom: -1000px;
+    position: absolute;
+   /* bottom: -1000px;
     right: 0;
     top: 20%;*/
     float: right;
-    margin-top: -100%;
+    /*margin-top: -1251px;*/
     right: 0;
+    top: 0;
     /*left: 0px;*/
     overflow: auto;
     /*margin-bottom: 1000px;*/
@@ -324,28 +355,20 @@ textarea:focus{
 }
 
 .HomeTechniques1 {
-    background: rgba(0, 160, 19, 0.3);
+    background: rgba(0, 0, 255, 0.3);
     padding: 1em; 
-    margin: 20px;
+    margin-right: 8%;
     border-radius: 10px;
     border: solid 3px thistle;
     box-shadow: 4px 10px 10px black;
-    width: 80%;
-    height: 80%;
+    width: 500px;
+    height: 400px;
     list-style: none;
+    float: right;
+    overflow: auto;
 }
 
-.HomeTechniques {
-    background: rgba(0, 160, 19, 0.3);
-    padding: 1em; 
-    margin: 20px;
-    border-radius: 10px;
-    border: solid 3px thistle;
-    box-shadow: 4px 10px 10px black;
-    width: 80%;
-    height: 80%;
-    list-style: none;
-}
+
 
 
 .OutsideTechniques:empty:after {
@@ -354,29 +377,29 @@ textarea:focus{
 }
 
 .OutsideTechniques1 {
-    background: rgba(0, 160, 19, 0.3);
+    background: rgba(0, 0, 255, 0.3);
     padding: 1em; 
-    margin: 20px;
+    margin-top: 20px;
+    margin-right: 8%;
+    margin-bottom: 40px;
     border-radius: 10px;
     border: solid 3px thistle;
     box-shadow: 4px 10px 10px black;
-    width: 80%;
-    height: 80%;
+    width: 500px;
+    height: 400px;
     list-style: none;
+    float: right;
+    overflow: auto;
+
 
 }
 
-.OutsideTechniques {
-    background: rgba(0, 160, 19, 0.3);
-    padding: 1em; 
-    margin: 20px;
-    border-radius: 10px;
-    border: solid 3px thistle;
-    box-shadow: 4px 10px 10px black;
-    width: 80%;
-    height: 80%;
-    list-style: none;
+.liHomeTechniques{
+  /*margin: 0px;*/
+
+
 }
+
 
 .ListOutline {
   /*border: 10px solid black;*/
@@ -400,28 +423,27 @@ textarea:focus{
 }
 
 .BadSituations1 {
-    background: rgba(0, 160, 19, 0.3);
+    background: rgba(255, 0, 0, 0.3);
     padding: 1em; 
     margin: 20px;
     border-radius: 10px;
-    border: solid 3px thistle;
+    border: solid 1px thistle;
     box-shadow: 4px 10px 10px black;
-    width: 80%;
-    height: 80%;
+    width: 300px;
+    height: 510px;
     list-style: none;
+   /* position: absolute;
+    bottom: -1000px;
+    right: 0;
+    top: 20%;*/
+    float: right;
+    margin-top: 0px;
+    right: 0;
+    /*left: 0px;*/
+    overflow: auto;
 }
 
-.BadSituations {
-    background: rgba(0, 160, 19, 0.3);
-    padding: 1em; 
-    margin: 20px;
-    border-radius: 10px;
-    border: solid 3px thistle;
-    box-shadow: 4px 10px 10px black;
-    width: 80%;
-    height: 80%;
-    list-style: none;
-}
+
 
 
 .GoodPeople:empty:after{
@@ -430,31 +452,28 @@ textarea:focus{
 
 /*main container for good people list*/
 .GoodPeople1 {
-    background: rgba(0, 160, 19, 0.3);
+  background: rgba(0, 160, 19, 0.3);
     padding: 1em; 
     margin: 20px;
     border-radius: 10px;
-    border: solid 3px thistle;
+    border: solid 1px thistle;
     box-shadow: 4px 10px 10px black;
-    width: 80%;
-    height: 80%;
+    width: 300px;
+    height: 510px;
     list-style: none;
+   /* position: absolute;
+    bottom: -1000px;
+    right: 0;
+    top: 20%;*/
+    float: left;
+    margin-top: 0px;
+    right: 0;
+    /*left: 0px;*/
+    overflow: auto;
 
 }
 
-/*each individual list item in good people*/
-.GoodPeople {
-    background: rgba(0, 160, 19, 0.3);
-    padding: 1em; 
-    margin: 20px;
-    border-radius: 10px;
-    border: solid 3px thistle;
-    box-shadow: 4px 10px 10px black;
-    width: 80%;
-    height: 80%;
-    list-style: none;
 
-}
 
 
 
@@ -466,52 +485,67 @@ textarea:focus{
     padding: 1em; 
     margin: 20px;
     border-radius: 10px;
-    border: solid 3px thistle;
+    border: solid 1px thistle;
     box-shadow: 4px 10px 10px black;
-    width: 80%;
-    height: 80%;
+    width: 300px;
+    height: 510px;
     list-style: none;
+   /* position: absolute;
+    bottom: -1000px;
+    right: 0;
+    top: 20%;*/
+    float: right;
+    margin-top: 0px;
+    right: 0;
+    /*left: 0px;*/
+    overflow: auto;
 }
 
-.GoodSituations {
-    background: rgba(0, 160, 19, 0.3);
-    padding: 1em; 
-    margin: 20px;
-    border-radius: 10px;
-    border: solid 3px thistle;
-    box-shadow: 4px 10px 10px black;
-    width: 80%;
-    height: 80%;
-    list-style: none;
-}
+
 
 .BadPeople:empty:after{
   content: 'No one is on this list yet but you will see some people here the more logs you create'
 }
 
-.BadPeople {
-    background: rgba(0, 160, 19, 0.3);
-    padding: 1em; 
-    margin: 20px;
-    border-radius: 10px;
-    border: solid 3px thistle;
-    box-shadow: 4px 10px 10px black;
-    width: 80%;
-    height: 80%;
-    list-style: none;
-}
+
 
 .BadPeople1 {
-    background: rgba(0, 160, 19, 0.3);
+    background: rgba(255, 0, 0, 0.3);
     padding: 1em; 
     margin: 20px;
     border-radius: 10px;
-    border: solid 3px thistle;
+    border: solid 1px thistle;
     box-shadow: 4px 10px 10px black;
-    width: 80%;
-    height: 80%;
+    width: 300px;
+    height: 510px;
     list-style: none;
+   /* position: absolute;
+    bottom: -1000px;
+    right: 0;
+    top: 20%;*/
+    float: right;
+    margin-top: 0px;
+    right: 0;
+    /*left: 0px;*/
+    overflow: auto;
 }
+
+.liPeople {
+  height: 20px;
+}
+
+
+.liSituations {
+  height: 20%;
+}
+
+
+
+
+
+
+
+
 
 
 
