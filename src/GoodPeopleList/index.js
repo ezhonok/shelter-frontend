@@ -1,4 +1,5 @@
 import React from 'react'
+import moment from 'moment'
 
 const GoodPeople = (props) => {
 	console.log("props for badPeople: ", props)
@@ -10,16 +11,14 @@ const GoodPeople = (props) => {
 			<li className="liPeople" key={logs._id}>
 
 				{logs.goodPerson}
-		
+				<br/>{moment(logs.date).calendar()}
 			</li>
 			)
 	})
 
 	return (
 		<div className="GoodPeople1">
-			<div>
-				People below made you feel good :) That is precious! Be grateful and share your gratitude with them.
-			</div>
+			
 			{GoodPeopleList}
 			
 			</div>

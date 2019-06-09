@@ -51,10 +51,26 @@ componentDidMount(){
 		return(
 			<div>
 				<Link to="/techniques">See or add to your "Feel better" techniques</Link>
+				<div className="ReflectionBadPeople">
+					People below upset you at some point. It happens! But do take a closer look and see if someone is here an awful lot. Reflect on your relationship and decide what to do about it.
+				</div>
 				<BadPeople log={this.state.logs}/>
+				
+				<div className="ReflectionGoodPeople">
+					People below made you feel good :) That is precious! Be grateful and share your gratitude with them.
+				</div>
 				<GoodPeople log={this.state.logs}/>
+				
+				<div className="ReflectionGoodSituations">
+					Situations below lifted your spirit. Consider adding them to your "Feel Better" techniques (if applicable)
+				</div>
 				<GoodSituations log={this.state.logs}/>
+				
+				<div className="ReflectionBadSituations">
+					Situations below did not make you feel great. Why? What was your primary feeling? Come back to this reflection in a few days and see if you still feel the same way and think about why yu do or don't feel the same way.
+				</div>
 				<BadSituations log={this.state.logs}/>
+				
 				<Logs log={this.state.logs} />
 			</div>
 		)

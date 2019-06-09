@@ -1,4 +1,5 @@
 import React from 'react'
+import moment from 'moment'
 
 const BadSituations = (props) => {
 	console.log("props for badPeople: ", props)
@@ -10,16 +11,14 @@ const BadSituations = (props) => {
 			<li className="liSituations" key={logs._id}>
 
 				{logs.badSituation}
-		
+				<br/>{moment(logs.date).calendar()}
 			</li>
 			)
 	})
 
 	return (
 		<div className="BadSituations1">
-			<div>
-				Situations below did not make you feel great. Why? What was your primary feeling? Come back to this reflection in a few days and see if you still feel the same way and think about why yu do or don't feel the same way.
-			</div>
+		
 					{BadSituationsList}
 				
 			</div>

@@ -119,17 +119,6 @@ a:hover{
 
 }
 
-.BadPeople {
-      background: rgba(0, 160, 19, 0.3);
-      padding: 1em; 
-      margin: 20px;
-      border-radius: 10px;
-      border: solid 3px thistle;
-      box-shadow: 4px 10px 10px black;
-      width: 80%;
-      height: 80%;
-      list-style: none;
-}
 
 
 
@@ -176,43 +165,12 @@ input:focus{
 
 }*/
 
-/*This is the main container for logs*/
-.ListOfLogs1 {
-    background: rgba(0, 160, 19, 0.3);
-    padding: 15px; 
-    margin: 15px;
-    border-radius: 10px;
-    border: solid 1px thistle;
-    box-shadow: 5px 5px 10px hotpink;
-    /*width: 300px;*/
-    height: 1000px;
-    /*list-style: none;*/
-    /*flex-wrap: wrap;*/
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    overflow: auto;
 
-}
 
-/*these are the individual logs*/
-.listOfLogs {
-
-    background: rgba(0, 160, 19, 0.3);
-    padding: 15px; 
-    margin: 15px;
-    border-radius: 10px;
-    border: solid 1px thistle;
-    /*box-shadow: 5px 5px 10px hotpink;*/
-    width: 400px;
-    /*height: 00px;*/
-    list-style: none;
-    /*display: flex;*/
-    /*flex-direction: row;*/
-
-}
+  
 
  .liLogs {
-    background: rgba(0, 160, 19, 0.3);
+    background: rgba(0, 0, 255, 0.3);
     /*padding: 1em; */
     /*margin: 20px;*/
     border-radius: 10px;
@@ -228,6 +186,8 @@ input:focus{
     top: 20%;*/
     float: left;
     margin-left: 0px;
+    margin-right: 20px;
+    margin-top: 50px;
     /*margin-top: 1500px;*/
     /*margin-top: -1251px;*/
     /*right: 0;*/
@@ -358,6 +318,7 @@ textarea:focus{
     background: rgba(0, 0, 255, 0.3);
     padding: 1em; 
     margin-right: 8%;
+    margin-top: -100px;
     border-radius: 10px;
     border: solid 3px thistle;
     box-shadow: 4px 10px 10px black;
@@ -425,25 +386,34 @@ textarea:focus{
 .BadSituations1 {
     background: rgba(255, 0, 0, 0.3);
     padding: 1em; 
-    margin: 20px;
+    /*margin: 10px;*/
     border-radius: 10px;
-    border: solid 1px thistle;
-    box-shadow: 4px 10px 10px black;
+    border: solid 1px indianred;
+    box-shadow: 4px 5px 5px indianred;
     width: 300px;
     height: 510px;
     list-style: none;
-   /* position: absolute;
-    bottom: -1000px;
-    right: 0;
-    top: 20%;*/
-    float: right;
-    margin-top: 0px;
-    right: 0;
-    /*left: 0px;*/
+    float: left;
+    margin-right: 30px;
+    margin-left: 0px;
     overflow: auto;
 }
 
-
+.ReflectionBadSituations {
+    background: rgba(200, 0, 100, 0.3);
+    padding: 1em; 
+    margin-top: -162px;
+    float: left;
+    border-radius: 10px;
+    border: solid 1px indianred;
+    box-shadow: 4px 5px 5px indianred;
+    width: 300px;
+    height: 120px;
+    list-style: none;
+    /*float: left;*/
+    /*margin-left: 0px;*/
+    overflow: auto;
+}
 
 
 .GoodPeople:empty:after{
@@ -452,27 +422,52 @@ textarea:focus{
 
 /*main container for good people list*/
 .GoodPeople1 {
-  background: rgba(0, 160, 19, 0.3);
+    background: rgba(0, 160, 19, 0.3);
     padding: 1em; 
-    margin: 20px;
     border-radius: 10px;
-    border: solid 1px thistle;
-    box-shadow: 4px 10px 10px black;
+    border: solid 1px yellow;
+    box-shadow: 6px 5px 10px lightyellow;
     width: 300px;
     height: 510px;
     list-style: none;
-   /* position: absolute;
-    bottom: -1000px;
-    right: 0;
-    top: 20%;*/
     float: left;
-    margin-top: 0px;
-    right: 0;
-    /*left: 0px;*/
+ /*   margin-right: 20px;
+    margin-top: 0px;*/
+    margin-right: 30px;
+    margin-left: 0px;
+    /*margin-top: -110px;*/
     overflow: auto;
 
 }
 
+.ReflectionGoodPeople {
+    background: rgba(0, 200, 150, 0.3);
+    padding: 1em; 
+    /*margin: 10px;*/
+    margin-top: -162px;
+    float: left;
+    border-radius: 10px;
+    border: solid 1px yellow;
+    box-shadow: 6px 3px 10px lightyellow;
+    width: 300px;
+    height: 120px;
+    list-style: none;
+    overflow: auto;
+}
+
+.FeelBetterGoodPeople{
+    background: rgba(0, 200, 150, 0.3);
+    padding: 1em; 
+    /*float: left;*/
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: solid 1px yellow;
+    box-shadow: 6px 3px 10px lightyellow;
+    width: 300px;
+    height: 70px;
+    list-style: none;
+    overflow: auto;
+}
 
 
 
@@ -483,55 +478,87 @@ textarea:focus{
 .GoodSituations1 {
     background: rgba(0, 160, 19, 0.3);
     padding: 1em; 
-    margin: 20px;
     border-radius: 10px;
-    border: solid 1px thistle;
-    box-shadow: 4px 10px 10px black;
+    border: solid 1px yellow;
+    box-shadow: 6px 3px 10px lightyellow;
     width: 300px;
     height: 510px;
     list-style: none;
-   /* position: absolute;
-    bottom: -1000px;
-    right: 0;
-    top: 20%;*/
-    float: right;
-    margin-top: 0px;
-    right: 0;
-    /*left: 0px;*/
+    float: left;
+    margin-right: 30px;
+    margin-left: 0px;
     overflow: auto;
 }
 
+.ReflectionGoodSituations {
+    background: rgba(0, 200, 150, 0.3);
+    padding: 1em; 
+    margin-top: -162px;
+    float: left;
+    border-radius: 10px;
+    border: solid 1px yellow;
+    box-shadow: 6px 3px 10px lightyellow;
+    width: 300px;
+    height: 120px;
+    list-style: none;
+    /*float: left;*/
+    /*margin-left: 0px;*/
+    overflow: auto;
+}
 
 
 .BadPeople:empty:after{
   content: 'No one is on this list yet but you will see some people here the more logs you create'
 }
 
+/*div with description*/
+.FeelBetterBadPeople {
+    background: rgba(200, 0, 100, 0.3);
+    padding: 1em; 
+    margin-top: -120px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: solid 1px indianred;
+    box-shadow: 4px 5px 5px indianred;
+    width: 300px;
+    height: 70px;
+    float: left;
+    list-style: none;
+}
 
+.ReflectionBadPeople {
+    background: rgba(200, 0, 100, 0.3);
+    padding: 1em; 
+    margin: 10px;
+    border-radius: 10px;
+    border: solid 1px indianred;
+    box-shadow: 4px 5px 5px indianred;
+    width: 300px;
+    height: 120px;
+    list-style: none;
+    /*float: left;*/
+    /*margin-left: 0px;*/
+    
+}
 
 .BadPeople1 {
     background: rgba(255, 0, 0, 0.3);
     padding: 1em; 
-    margin: 20px;
     border-radius: 10px;
-    border: solid 1px thistle;
-    box-shadow: 4px 10px 10px black;
+    border: solid 1px indianred;
+    box-shadow: 4px 5px 5px indianred;
     width: 300px;
     height: 510px;
     list-style: none;
-   /* position: absolute;
-    bottom: -1000px;
-    right: 0;
-    top: 20%;*/
-    float: right;
-    margin-top: 0px;
-    right: 0;
-    /*left: 0px;*/
+    float: left;
+    margin-right: 30px;
+    margin-left: 10px;
     overflow: auto;
 }
 
 .liPeople {
-  height: 20px;
+  height: 30px;
 }
 
 

@@ -101,8 +101,16 @@ class FeelBetterContainer extends Component {
 render(){
 	return(
 		<div>
+			<div className="FeelBetterGoodPeople">
+				See if you can get in touch with these people. Talking it out could really help
+			</div>
 			<GoodPeople log={this.state.logs}/>
+
+			<div className="FeelBetterBadPeople">
+				Avoid talking to people from the list below until you feel better
+			</div>
 			<BadPeople log={this.state.logs}/>
+			
 			<HomeTechniques homeTechniques={this.state.homeTechniques} />
 			<OutsideTechniques outsideTechniques={this.state.outsideTechniques} />
 

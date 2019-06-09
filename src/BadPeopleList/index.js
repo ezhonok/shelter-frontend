@@ -1,4 +1,5 @@
 import React from 'react'
+import moment from 'moment'
 
 const BadPeople = (props) => {
 	console.log("props for badPeople: ", props)
@@ -10,6 +11,7 @@ const BadPeople = (props) => {
 			<li className="liPeople" key={logs._id}>
 
 				{logs.badPerson}
+				<br/>{moment(logs.date).calendar()}
 		
 			</li>
 			)
@@ -18,7 +20,6 @@ const BadPeople = (props) => {
 	return (
 		<div className="BadPeople1">
 			
-				People below upset you at some point. It happens! But do take a closer look and see if someone is here an awful lot. Reflect on your relationship and decide what to do about it.
 			
 			{BadPeopleList}
 			

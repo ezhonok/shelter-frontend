@@ -1,4 +1,6 @@
 import React from 'react'
+import moment from 'moment'
+
 
 const GoodSituations = (props) => {
 	console.log("props for badPeople: ", props)
@@ -10,16 +12,14 @@ const GoodSituations = (props) => {
 			<li className="liSituations" key={logs._id}>
 
 				{logs.goodActivity}
-		
+				<br/>{moment(logs.date).calendar()}
 			</li>
 			)
 	})
 
 	return (
 		<div className="GoodSituations1">
-			<div>
-				Situations below lifted your spirit. Consider adding them to your "Feel Better" techniques (if applicable)
-			</div>
+			
 					{GoodSituationsList}
 				
 			</div>
