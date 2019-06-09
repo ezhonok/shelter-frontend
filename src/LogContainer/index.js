@@ -16,7 +16,7 @@ class LogContainer extends Component {
 
 
 	componentDidMount(){
-		this.getLogs()
+		// this.getLogs()
 	}
 
 
@@ -97,7 +97,7 @@ class LogContainer extends Component {
 			<div>
 				<Link to="/reflections">See all your logs here</Link><br/><br/><br/>
 				<CreateLog addLog={this.addLog}/>
-				<Logs log={this.state.logs} />
+				
 			</div>
 			)
 	}

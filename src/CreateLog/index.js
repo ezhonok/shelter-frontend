@@ -57,7 +57,8 @@ class CreateLog extends Component {
 					type="text" 
 					name="restedScale" 
 					onChange={this.updateLog}/><br/><br/>
-				4. Did you eat well today?(well meaning you didn’t go hungry for extended periods of time and ate healthy food; bad meaning you either didn’t eat much or ate mostly processed/junk food)<br/>
+				4. Did you eat well today?
+				<br/>(well meaning you didn’t go hungry for extended periods of time and ate healthy food; bad meaning you either didn’t eat much or ate mostly processed/junk food)<br/>
 					<input 
 					type="text" 
 					name="food" 
