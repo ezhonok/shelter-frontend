@@ -64,7 +64,7 @@ handleSubmit = async (e) => {
 						onChange={this.handleChange}/>
 						<br/><br/><button>Sign in</button><br/>
         				<p>or</p><Link to="/register">Register Here</Link>
-				</form>
+				</form><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 			</div>
 		)
 	}

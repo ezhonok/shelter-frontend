@@ -20,8 +20,7 @@ const EditTechnique = (props) => {
 				value={props.techniqueToEdit.description}/>
 				<br/><br/><br/>
 				<button>Submit</button>
-				<button className="exitButton"
-        		onMouseOver={props.closeWindow}>x</button>
+				
 				
 				</form>
 		</div>

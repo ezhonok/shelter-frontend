@@ -8,6 +8,7 @@
 body{
   background-image: url('https://edecorati.com/data/out/44/lotus-wallpapers_291471540.jpg');
   background-size: cover;
+
   /*background-repeat: no-repeat;*/
   /*background-position: center center;*/
 }
@@ -51,16 +52,32 @@ input {
 
 
 button {
-  font-size: 20px;
+  font-size: 25px;
+  /*font-weight: bold;*/
   color: yellow;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 7px;
-  box-shadow: 3px 3px 3px lightyellow;
-  background: rgba(255, 192, 203, 0.4);
-  border: 1px outset yellow;
+  /*box-shadow: 0px 0px 8px black inset;*/
+  box-shadow: 3px 3px 11px lightyellow;
+  background: rgba(255, 192, 203, 0.7);
+  background-color: pink;
+  /*border: outset 5px white;*/
+  /*border: none;*/
+  border: 1px solid yellow;
   font-family: 'Great Vibes', cursive;
-  margin: 5px;
-  text-shadow: 3px 3px 3px pink;
+  margin: 3px;
+  padding-right: 10px;
+  text-shadow: 3px 3px 3px black;
+  
+}
+
+button:hover{
+  outline: none;
+  background: hotpink
+}
+
+button:focus{
+  outline: none;
 }
 
 li {
@@ -69,10 +86,12 @@ li {
     margin: 15px;
     border-radius: 10px;
     border: solid 1px thistle;
-    box-shadow: 5px 5px 10px hotpink;
+    box-shadow: 5px 5px 10px black;
     width: 80%;
-    height: 80%;
+    height: 20%;
     list-style: none;
+    align-content: right;
+    overflow: scroll;
 }
 
 
@@ -83,10 +102,15 @@ ul {
 
 a{
   text-decoration: none;
-  text-shadow: 4px 5px 5px black;
+  text-shadow: 4px 5px 8px black;
   font-weight: bold;
   color: antiquewhite;
-  font-size: 20px;
+  font-size: 25px;
+
+}
+
+a:hover{
+  color: brown;
 
 }
 
@@ -103,32 +127,6 @@ a{
 }
 
 
-
-textarea {
-  width: 450px;
-  height: 200px;
-  border-radius: 10px;
-  box-shadow: 4px 10px 10px black;
-  background: rgba(0, 160, 19, 0.3);
-  border: none;
-  font-family: 'Seaweed Script', cursive;
-  font-size: 37px;
-  padding: 15px;
-}
-
-
-button:hover{
-  outline: none;
-  background: rgba(255, 152, 203, 0.4)
-}
-
-textarea:focus{
-  outline: none;
-}
-
-button:focus{
-  outline: none;
-}
 
 input:focus{
   outline: none;
@@ -226,17 +224,95 @@ input:focus{
     list-style: none;
 }*/
 
+/*the main container*/
+.CreateTechnique {
+  /*border: solid 1px red;*/
+  height: 80%;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+/*description of the page*/
+.CreateTechnique2 {
+  border: solid 3px brown;
+  background-color: indianred;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  /*margin-top: 20px;*/
+
+}
+
+/*the form container*/
+.CreateTechnique1 {
+  /*border: solid 1px yellow;*/
+  height: 265px;
+  width: 100%;
+  margin-left: 20px;
+  /*margin-top: 20px;*/
+
+}
+
+
+
+.techniqueInput {
+  width: 322px;
+  background: rgba(0, 0, 255, 0.3);
+  border-radius: 10px;
+}
+
+.addTechniqueButton {
+  background: rgba(0, 0, 255, 0.3);
+
+}
+
+textarea {
+  width: 300px;
+  height: 100%;
+  border-radius: 10px;
+  /*box-shadow: 4px 10px 10px black;*/
+  box-shadow: 0px 0px 40px inset darkslategray;
+  background: rgba(0, 0, 255, 0.3);
+
+  border: none;
+  font-family: 'Seaweed Script', cursive;
+  font-size: 37px;
+  padding: 15px;
+}
+
+
+
+
+textarea:focus{
+  outline: none;
+}
+
 .AllUsersTechniques1 {
-  background: rgba(0, 160, 19, 0.3);
+    background: rgba(0, 160, 19, 0.3);
     padding: 1em; 
     margin: 20px;
     border-radius: 10px;
-    border: solid 3px thistle;
+    border: solid 1px thistle;
     box-shadow: 4px 10px 10px black;
-    width: 80%;
-    height: 80%;
+    width: 300px;
+    height: 440px;
     list-style: none;
+   /* position: absolute;
+    bottom: -1000px;
+    right: 0;
+    top: 20%;*/
+    float: right;
+    margin-top: -100%;
+    right: 0;
+    /*left: 0px;*/
+    overflow: auto;
+    /*margin-bottom: 1000px;*/
 }
+
+
 
 .HomeTechniques:empty:after {
   content: 'You have not created any home techniques yet. You can create them by going to "My Techniques" page'
@@ -282,6 +358,7 @@ input:focus{
     width: 80%;
     height: 80%;
     list-style: none;
+
 }
 
 .OutsideTechniques {
@@ -296,6 +373,22 @@ input:focus{
     list-style: none;
 }
 
+.ListOutline {
+  /*border: 10px solid black;*/
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  float: left;
+  margin-left: -25px;
+}
+
+.ListOfTechniques {
+  width: 100%;
+ /* border: 10px solid black;
+  display: flex;
+  flex-direction: column;*/
+  /*justify-content: flex-end;*/
+}
 
 .BadSituations:empty:after {
   content: 'Nothing bad has been recorded by you yet. Not such a bad thing :) However, be sure to complete your logs frequently and accurately to be able to analyze your bad days.'
