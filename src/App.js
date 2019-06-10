@@ -8,6 +8,7 @@ import ReflectionContainer from './ReflectionContainer'
 import TechniquesContainer from './TechniquesContainer'
 import FeelBetterContainer from './FeelBetterContainer'
 import NightContainer from './NightContainer'
+import DayContainer from './DayContainer'
 import Home from './HomeContainer'
 
 const My404 = () => {
@@ -32,6 +33,7 @@ function App() {
         <Route exact path="/techniques" component={ TechniquesContainer } />
         <Route exact path="/feel-better" component={ FeelBetterContainer } />
         <Route exact path="/night" component={ NightContainer } />
+        <Route exact path="/day" component={ DayContainer } />
         <Route component={My404} />
       </Switch>
     </BrowserRouter>

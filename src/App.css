@@ -42,7 +42,7 @@ body{
 }
 
 .Night {
-float: left;
+  float: left;
   top: 0px;
   border: 1px solid yellow;
   width: 600px;
@@ -50,10 +50,28 @@ float: left;
   margin-bottom: 40px;
   font-family: 'Merienda', cursive;
   font-size: 18px;
-  background: rgba(0, 0, 255, 0.3);
+  background: rgba(0, 150, 255, 0.3);
   border-radius: 10px;
-  text-shadow: 4px 2px 8px white;
+  text-shadow: 4px 2px 8px black;
   padding: 30px;
+  color: black;
+}
+
+
+.Day {
+  background: rgba(0, 150, 255, 0.3);
+  padding: 15px; 
+    margin: 15px;
+    font-family: 'Merienda', cursive;
+    font-size: 15px;
+    border-radius: 10px;
+    border: solid 1px thistle;
+    box-shadow: 5px 5px 10px black;
+    width: 400px;
+    height: 20%;
+    list-style: none;
+    align-content: right;
+    overflow: scroll;
 }
 
 p {
@@ -144,7 +162,9 @@ button:focus{
   /*float: right;*/
 }
 
-
+strong {
+  color: teal;
+}
 
 
 li {

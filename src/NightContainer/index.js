@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Header from '../Header'
 
 
-class Home extends Component {
+class NightContainer extends Component {
 	constructor(){
 		super()
 
@@ -77,4 +77,4 @@ render(){
 
 
 
-export default Home
+export default NightContainer
