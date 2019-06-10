@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import CreateLog from '../CreateLog'
 import Logs from '../LogList'
 import { Link } from 'react-router-dom'
-
+import Header from '../Header'
 
 class LogContainer extends Component {
 	constructor(){
@@ -95,7 +95,7 @@ class LogContainer extends Component {
 		console.log(this.props.loggedIn);
 		return(
 			<div>
-				<Link to="/reflections">See all your logs here</Link><br/><br/><br/>
+			<Header/>
 				<CreateLog addLog={this.addLog}/>
 				
 			</div>

@@ -19,9 +19,9 @@ const GoodSituations = (props) => {
 
 	return (
 		<div className="GoodSituations1">
-			
+			<div className="GoodSituations">
 					{GoodSituationsList}
-				
+			</div>
 			</div>
 
 		)

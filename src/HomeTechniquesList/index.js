@@ -18,7 +18,9 @@ const HomeTechniques = (props) => {
 	return (
 		<div className="HomeTechniques1">
 			<p>If you are at home, try something from this list </p>
+				<div className="HomeTechniques">
 				{HomeTechniquesList}
+				</div>
 			</div>
 
 		)

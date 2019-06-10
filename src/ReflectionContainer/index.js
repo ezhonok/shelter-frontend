@@ -5,6 +5,8 @@ import GoodPeople from '../GoodPeopleList'
 import GoodSituations from '../GoodSituationsList'
 import BadSituations from '../BadSituationsList'
 import { Link } from 'react-router-dom'
+import Header from '../Header'
+
 
 class Reflections extends Component {
 	constructor(){
@@ -50,7 +52,7 @@ componentDidMount(){
 	render(){
 		return(
 			<div>
-				<Link to="/techniques">See or add to your "Feel better" techniques</Link>
+			<Header/>
 				<div className="ReflectionBadPeople">
 					People below upset you at some point. It happens! But do take a closer look and see if someone is here an awful lot. Reflect on your relationship and decide what to do about it.
 				</div>

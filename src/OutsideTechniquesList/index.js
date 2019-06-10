@@ -18,7 +18,9 @@ const OutsideTechniques = (props) => {
 	return (
 		<div className="OutsideTechniques1">
 			<p>If you are outside, try something from this list: </p>
+				<div className="OutsideTechniques">
 				{OutsideTechniquesList}
+				</div>
 		</div>
 
 		)

@@ -4,6 +4,7 @@ import Techniques from '../TechniquesList'
 import EditTechnique from '../EditTechnique'
 import AllUsersTechniques from '../AllUsersTechniquesList'
 import { Link }  from 'react-router-dom'
+import Header from '../Header'
 
 // import HomeTechniques from '../HomeTechniquesList'
 
@@ -188,7 +189,7 @@ try {
 		console.log(this.props.loggedIn);
 		return(
 			<div>
-				<Link to="/feel-better">Not feeling great? Let's see what we can do about it</Link>
+			<Header/>
 				<CreateTechnique
 				addTechnique={this.addTechnique}/>
 				<Techniques

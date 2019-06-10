@@ -3,7 +3,7 @@ import BadPeople from '../BadPeopleList'
 import GoodPeople from '../GoodPeopleList'
 import HomeTechniques from '../HomeTechniquesList'
 import OutsideTechniques from '../OutsideTechniquesList'
-
+import Header from '../Header'
 
 class FeelBetterContainer extends Component {
 	constructor(){
@@ -101,6 +101,7 @@ class FeelBetterContainer extends Component {
 render(){
 	return(
 		<div>
+		<Header className="Header"/>
 			<div className="FeelBetterGoodPeople">
 				See if you can get in touch with these people. Talking it out could really help
 			</div>
@@ -110,7 +111,7 @@ render(){
 				Avoid talking to people from the list below until you feel better
 			</div>
 			<BadPeople log={this.state.logs}/>
-			
+
 			<HomeTechniques homeTechniques={this.state.homeTechniques} />
 			<OutsideTechniques outsideTechniques={this.state.outsideTechniques} />
 
