@@ -3,6 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Great+Vibes);
 @import url(https://fonts.googleapis.com/css?family=Merienda);
 @import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+@import url(https://fonts.googleapis.com/css?family=Nothing+You+Could+Do);
 
 
 body{
@@ -19,7 +20,25 @@ body{
   font-family: 'Dancing Script', cursive;
   font-size: 111px;
   position: relative left;
-  text-shadow: 5px 5px 10px cadetblue;
+  text-shadow: 5px 5px 10px teal;
+}
+
+.Intro {
+  float: right;
+  top: 0px;
+  border: 1px solid yellow;
+  width: 600px;
+  height: 747px;
+  margin-bottom: 40px;
+  font-family: 'Merienda', cursive;
+  font-size: 18px;
+  background: rgba(0, 0, 255, 0.3);
+  border-radius: 10px;
+  text-shadow: 4px 2px 8px black;
+  padding: 30px;
+  /*font-weight: bold;*/
+  color: antiquewhite;
+ 
 }
 
 p {
@@ -87,24 +106,30 @@ button:focus{
 
 
 .Link {
-  font-size: 15px;
+  font-size: 25px;
   float: right;
 }
 
 .Link1 {
-  font-size: 15px;
+  font-size: 25px;
   margin-left: -40px;
   /*float: right;*/
 }
 
 .Link2 {
-  font-size: 15px;
+  font-size: 25px;
   margin-left: 30px;
   /*float: right;*/
 }
 
 .Link3 {
-  font-size: 15px;
+  font-size: 25px;
+  margin-left: 30px;
+  /*float: right;*/
+}
+
+.Link4 {
+  font-size: 25px;
   margin-left: 30px;
   /*float: right;*/
 }
@@ -114,6 +139,8 @@ li {
     background: rgba(0, 160, 19, 0.3);
     padding: 15px; 
     margin: 15px;
+    font-family: 'Merienda', cursive;
+    font-size: 15px;
     border-radius: 10px;
     border: solid 1px thistle;
     box-shadow: 5px 5px 10px black;
@@ -132,28 +159,39 @@ ul {
 
 a{
   text-decoration: none;
+  font-family: 'Nothing You Could Do', cursive;
   text-shadow: 4px 2px 8px black;
   font-weight: bold;
   color: antiquewhite;
-  font-size: 25px;
+  font-size: 30px;
 
 }
 
 a:hover{
-  color: brown;
+  color: mediumvioletred;
+  text-shadow: 4px 2px 8px yellow;
 
 }
 
 
+h1 {
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 40px;
+  text-align: center;
+}
 
+h2 {
+    font-family: 'Nothing You Could Do', cursive;
+    color: black;
+    text-shadow: 4px 2px 8px pink;
+
+}
 
 input:focus{
   outline: none;
 }
 
-.labelChange {
-  
-}
+
 
 
 .edit {
@@ -343,7 +381,7 @@ textarea:focus{
     background: rgba(0, 0, 255, 0.3);
     padding: 1em; 
     margin-right: 8%;
-    margin-top: -100px;
+    margin-top: -115px;
     border-radius: 10px;
     border: solid 3px thistle;
     box-shadow: 4px 10px 10px black;
@@ -435,6 +473,8 @@ textarea:focus{
     width: 300px;
     height: 120px;
     list-style: none;
+    font-family: 'Merienda', cursive;
+    font-size: 15px;
     /*float: left;*/
     /*margin-left: 0px;*/
     overflow: auto;
@@ -467,7 +507,9 @@ textarea:focus{
 
 .ReflectionGoodPeople {
     background: rgba(0, 200, 150, 0.3);
-    padding: 1em; 
+    padding: 1em;
+    font-family: 'Merienda', cursive;
+    font-size: 15px;
     /*margin: 10px;*/
     margin-top: -162px;
     float: left;
@@ -483,6 +525,8 @@ textarea:focus{
 .FeelBetterGoodPeople{
     background: rgba(0, 200, 150, 0.3);
     padding: 1em; 
+    font-family: 'Merienda', cursive;
+    font-size: 16px;
     /*float: left;*/
     border-radius: 10px;
     margin-bottom: 15px;
@@ -519,6 +563,8 @@ textarea:focus{
     background: rgba(0, 200, 150, 0.3);
     padding: 1em; 
     margin-top: -162px;
+    font-family: 'Merienda', cursive;
+    font-size: 16px;
     float: left;
     border-radius: 10px;
     border: solid 1px yellow;
@@ -540,6 +586,8 @@ textarea:focus{
 .FeelBetterBadPeople {
     background: rgba(200, 0, 100, 0.3);
     padding: 1em; 
+    font-family: 'Merienda', cursive;
+    font-size: 16px;
     margin-top: -120px;
     margin-left: 5px;
     margin-bottom: 15px;
@@ -556,6 +604,8 @@ textarea:focus{
     background: rgba(200, 0, 100, 0.3);
     padding: 1em; 
     margin: 10px;
+    font-family: 'Merienda', cursive;
+    font-size: 16px;
     border-radius: 10px;
     border: solid 1px indianred;
     box-shadow: 4px 5px 5px indianred;
