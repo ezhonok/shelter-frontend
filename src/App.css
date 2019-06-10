@@ -41,6 +41,21 @@ body{
  
 }
 
+.Night {
+float: left;
+  top: 0px;
+  border: 1px solid yellow;
+  width: 600px;
+  height: 888px;
+  margin-bottom: 40px;
+  font-family: 'Merienda', cursive;
+  font-size: 18px;
+  background: rgba(0, 0, 255, 0.3);
+  border-radius: 10px;
+  text-shadow: 4px 2px 8px white;
+  padding: 30px;
+}
+
 p {
   font-family: 'Merienda', cursive;
 
@@ -116,23 +131,20 @@ button:focus{
   /*float: right;*/
 }
 
-.Link2 {
+.Link2, .Link4 {
   font-size: 25px;
-  margin-left: 30px;
+  margin-left: 37px;
+  color: white;
   /*float: right;*/
 }
 
-.Link3 {
+.Link3, .Link5 {
   font-size: 25px;
-  margin-left: 30px;
+  margin-left: 37px;
   /*float: right;*/
 }
 
-.Link4 {
-  font-size: 25px;
-  margin-left: 30px;
-  /*float: right;*/
-}
+
 
 
 li {

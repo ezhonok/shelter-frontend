@@ -13,6 +13,7 @@ const HeaderApp = () => {
         <Link className="Link2" to="/techniques">My "Feel Better" techniques</Link>
         <Link className="Link3" to="/logs">Create a new log</Link>
         <Link className="Link4" to="/reflections">Reflect and Analyze</Link>
+        <Link className="Link5" to="/home">Home</Link>
       </ul>
     </Header>
     )
