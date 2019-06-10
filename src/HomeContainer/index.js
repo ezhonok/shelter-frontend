@@ -8,7 +8,34 @@ class Home extends Component {
 		super()
 
 		this.state = {
-			isLogged: this.props
+			isLogged: this.props,
+			userData: []
+		}
+	}
+
+componentDidMount(){
+	this.getUser()
+}
+
+	getUser = async () => {
+		try {
+			const response = await fetch(process.env.REACT_APP_BACKEND_URL + '/auth/user-data', {
+				method: 'GET',
+				'credentials': 'include',
+				headers: {
+					'Content-Type': 'application/json'
+				}
+			})
+			if (response.status !== 200) {
+				throw Error(response.statusText)
+			}
+			const userParsed = await response.json()
+			console.log(userParsed, "this is raw data for user-data");
+			this.setState({
+				userData: userParsed.data
+			})
+		} catch(err){
+			console.log(err);
 		}
 	}
 
@@ -16,7 +43,7 @@ class Home extends Component {
 render(){
 	return(
 		<div>
-		Hello! What's shakin'? :)
+		<h1>Hi there! What's shakin', <strong> {this.state.userData.preferredname}</strong> ? :)</h1>
 			<p>placeholder for "What is this app all about?"</p>
 			<p>placeholder for "Just starting my day" </p>
 			<p><Link to="/feel-better">Not feeling too great emotionally</Link><br/><br/><br/></p>
